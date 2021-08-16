@@ -1,9 +1,18 @@
+// Require Files
 const router = require('express').Router();
+const apiRoute = require('./api');
+const homeRoute = require('./home-routes.js');
+const dashboardRoute = require('./dashboard-routes.js');
 
-const apiRoutes = require('./api');
-const homeRoutes = require('./homeRoutes');
+// Use Routes
+router.use('/api', apiRoute);
+router.use('/', homeRoute);
+router.use('/dashboard', dashboardRoute);
 
-router.use('/', homeRoutes);
-router.use('/api', apiRoutes);
+// Catch all
+router.use((req, res) => {
+  res.status(404).end();
+});
 
+// Export instance of router
 module.exports = router;

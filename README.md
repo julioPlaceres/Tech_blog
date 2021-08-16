@@ -1,2 +1,23 @@
-# Tech_blog
- A CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts as well. Built completely from scratch and deployed to Heroku. This app follows MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+## Gaming Blog
+   
+### Description
+
+*An application using mysql database, following CMS-style built using (MVC). Uses MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv*
+
+### Application Deployment
+
+https://mvc-tech-blog.herokuapp.com/
+
+### Application Screenshot
+
+![](images/mvc-tech-blog.png)
+
+### Installation Guidelines
+
+- Add a file named .env to the root of the project in order to connect to the db
+
+```text
+DB_NAME='techblog_db'
+DB_USER='root'
+DB_PW='XXX'
+```
