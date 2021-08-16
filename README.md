@@ -8,7 +8,7 @@
 
 ### Application Screenshot
 
-<!-- ![](images/placeHolder.png) -->
+![](public/images/screenshot.PNG)
 
 ### Installation Guidelines
 
